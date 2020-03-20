@@ -1,0 +1,18 @@
+#include<stdio.h>
+unsigned int count setbits(unsigned int n)
+{
+  unsigned int count=0;
+  while(n)
+  {
+    count+=n&1;
+    n>>=1;
+    }
+  return count;
+}
+/*program for test function countsetbits*/
+int main()
+{
+  int i=9;
+  printf("%d",countsetbits(i));
+  return0;
+ }
